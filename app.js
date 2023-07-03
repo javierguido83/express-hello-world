@@ -12,7 +12,7 @@ server.headersTimeout = 120 * 1000;
 app.get("/menu", function (req, res) {
    fs.readFile("/" + "menu.json", 'utf8', function (err, data) {
       console.log( data );
-      res.end( data );
+      res.json( data );
    });
 });
 
