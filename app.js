@@ -18,7 +18,7 @@ app.get('/menu', function (req, res) {
       "id": 4
    }
 }
-  res.end(user);
+  res.send(user);
 })
 
 const html = `
