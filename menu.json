@@ -4,7 +4,7 @@
 		{
 			"id"	 : 1,
 			"nombre" : "Cargas",
-			"ruta"	 : "\GrillaOpciones",
+			"ruta"	 : "GrillaOpciones",
 			"tabs" : [
 				{
 					"idTab": 11,
@@ -13,7 +13,7 @@
 						{
 							"idOpcion" : 1,
 							"descripcion": "Consulta de Envíos", 
-							"ruta"	: "\GrillaEstandar",
+							"ruta"	: "GrillaEstandar",
 							"EndPoint" : "", 
 							"FiltroInicial" : ""
 						}
