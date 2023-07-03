@@ -14,7 +14,16 @@ app.get("/menu", function (req, res) {
       console.log( data );
       res.end( data );
    });
-})
+});
+
+app.get('/ruta', (req, res) => {
+  const data = {
+    message: '¡Hola desde la ruta /ruta!',
+    someData: [1, 2, 3, 4, 5]
+  };
+
+  res.json(data);
+});
 
 const html = `
 <!DOCTYPE html>
