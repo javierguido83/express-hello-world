@@ -1,0 +1,25 @@
+
+{
+	"menu":[
+		{
+			"id"	 : 1,
+			"nombre" : "Cargas",
+			"ruta"	 : "\GrillaOpciones",
+			"tabs" : [
+				{
+					"idTab": 11,
+					"descripcion": "Consultas",
+					"opciones": [
+						{
+							"idOpcion" : 1,
+							"descripcion": "Consulta de Envíos", 
+							"ruta"	: "\GrillaEstandar",
+							"EndPoint" : "", 
+							"FiltroInicial" : ""
+						}
+					]
+				}
+			]
+		}
+	]
+}
