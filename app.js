@@ -9,16 +9,11 @@ const server = app.listen(port, () => console.log(`Example app listening on port
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
-app.get('/menu', function (req, res) {
-  var user = {
-   "user4" : {
-      "name" : "mohit",
-      "password" : "password4",
-      "profession" : "teacher",
-      "id": 4
-   }
-}
-  res.send(user);
+app.get('/listUsers', function (req, res) {
+   fs.readFile( __dirname + "/" + "menu.json", 'utf8', function (err, data) {
+      console.log( data );
+      res.end( data );
+   });
 })
 
 const html = `
